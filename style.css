@@ -1,0 +1,582 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Oswald, "Open Sans";
+    background-color: #eaeaea;
+}
+
+.navbar {
+    background-color: black;
+    width: 100%;
+    padding: 0px 0px;
+    
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons a,
+.search-icon a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 16px;
+    display: inline-block;
+}
+
+.icons a:hover,
+.search-icon a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+
+
+
+
+.hero {
+    font-family: Oswald;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.hero span {
+    background-color: black;
+    line-height: 24px;
+    font-size: 16px;
+    color: white;
+    padding: 4px 8px;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  font-family: Oswald;
+  transform: none;
+  display: block;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: white;
+  text-align: left;
+}
+
+.hero-text h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 54px;
+  box-sizing: border-box;
+  letter-spacing: 4px;
+  margin: 10px 15px;
+}
+
+.hero-text h1 {
+  font-size: 68px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  list-style: 96px;
+  box-sizing: border-box;
+  margin: 10px 15px;
+}
+
+.subscribe-btn {
+  background-color: #cccccc;
+  color: black;
+  opacity: 70%;  
+  border: none;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 27px;
+  font-size: 18px;
+  font-family: Oswald;
+  white-space: nowrap;
+  padding: 12px 24px; 
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 10px 15px;
+}
+
+.subscribe-btn:hover {
+  background-color: #cccccc;
+  opacity: 100%;
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  font-family: "Open Sans";
+  background-color: #eaeaea;
+}
+
+
+.main-content {
+  flex: 0 0 65%;
+}
+
+.post-box h3{
+    font-family: Oswald;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin: 10px 0;
+    box-sizing: border-box;
+
+}
+.post-box h5{
+    font-family: Oswald;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    margin: 10px 0;
+    box-sizing: border-box;
+    
+}
+.post-box {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  font-size: 15px;
+  line-height: 22.5px;
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+.post-box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  vertical-align: middle;
+  text-align: justify;
+  overflow: clip;
+
+}
+
+.post-box span{
+    font-family: Oswald;
+    font-size: 18px;
+    line-height: 27px;
+    display: inline;
+    color: #777;
+    box-sizing: border-box;
+}
+
+
+
+.post-actions {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin: 20px 0;
+}
+
+
+.like-btn {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+}
+
+.like-btn i {
+  margin-right: 5px; 
+}
+
+.like-btn:hover, .reply-btn:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+.reply-btn {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.reply-btn span {
+  background-color: white;
+  color: black;
+  padding: 0px 11px;
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+
+
+.sidebar {
+  flex: 0 0 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.profile-box {
+  background-color: black;
+  color: white;
+  padding: 0; 
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  overflow: hidden; 
+  margin-top: 20px;
+  width: 100%;
+}
+
+.profile-box img {
+  width: 100%;
+  height: auto;
+  display: block; 
+  filter: grayscale(70%);
+}
+
+.profile-box h3 {
+  font-family: Oswald;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 15px 20px 10px; 
+}
+
+.profile-box p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 20px 20px; 
+}
+
+
+
+.popular-posts {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  font-family: "Open Sans", sans-serif;
+  margin-top: 20px;
+}
+
+.popular-posts h3 {
+  font-family: Oswald;
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  margin: 0;
+}
+
+
+.post-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 2px solid #eaeaea;
+  transition: background-color 0.3s ease;
+}
+
+.post-item:last-child {
+  border-bottom: none;
+}
+
+.post-item img {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+
+.post-item h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.post-item p {
+  font-size: 15px;
+  color: #333;
+}
+
+
+.post-item:hover {
+  background-color: #ccc; 
+}
+
+
+
+.advertise-box {
+  background-color: #fff; 
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  padding: 20px; 
+  margin-top: 20px;
+}
+
+.advertise-box h3 {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-family: Oswald;
+  margin: -20px -20px 20px -20px; /* makes header span full width */
+}
+
+.ad-space {
+  background-color: #eaeaea; /* grey inner box */
+  text-align: center;
+  padding: 60px 0;
+  color: #333;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+/* Tags Box */
+.tags-box {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.tags-box h3 {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-family: Oswald;
+  margin: 0;
+}
+
+.tags {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags span {
+  background-color: #eaeaea;
+  color: black;
+  padding: 6px 12px;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tags span:hover {
+  background-color: #ccc;
+}
+
+.tags span.active {
+  background-color: black;
+  color: white;
+}
+
+
+.inspiration-box {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.inspiration-box h3 {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-family: Oswald;
+  margin: 0;
+}
+
+.inspiration-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 20px;
+}
+
+.inspiration-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.follow-box {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  margin-top: 10px;
+}
+
+.follow-box h3 {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-family: Oswald;
+  margin: 0;
+}
+
+.social-icons {
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #777;
+}
+
+.subscribe-box {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.subscribe-box h3 {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-family: Oswald;
+  margin: -20px -20px 20px -20px;
+}
+
+.subscribe-box p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subscribe-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.subscribe-form button {
+  background-color: #f44336; 
+  color: white;
+  border: none;
+  padding: 14px 0;
+  font-size: 18px;
+  font-family: Oswald;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #929292; 
+  color: black;
+}
+
+.footer {
+  background-color: #606060;
+  color: white;
+  text-align: left;
+  padding: 40px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer p{
+    margin: 20px;
+}
+
+.footer a:hover {
+  color: black;
+}
+
+/* To the top button */
+.top-btn {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  font-family: Oswald;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.top-btn:hover {
+  background-color: #eaeaea;
+  color: black;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .main-content,
+  .sidebar {
+    flex: 100%;
+  }
+}
+
